@@ -1,5 +1,3 @@
 export function Button() {
-  return (
-    <button>aosidasp</button>
-  )
+  return <button>Enviar</button>
 }
