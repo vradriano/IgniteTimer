@@ -68,8 +68,6 @@ export function CyclesContextProvider({ children }: CyclesContextProviderProps) 
     setCycles((prevProps) => [...prevProps, newCycle])
     setActiveCycleId(id)
     setAmountSecondsPast(0)
-
-    // reset()
   }
 
 
@@ -88,7 +86,8 @@ export function CyclesContextProvider({ children }: CyclesContextProviderProps) 
 
   return (
     <CyclesContext.Provider
-      value={{ 
+      value={{
+        cycles,
         activeCycle, 
         activeCycleId, 
         amountSecondsPast, 
