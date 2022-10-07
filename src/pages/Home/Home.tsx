@@ -51,7 +51,7 @@ export function Home() {
 
   return (
     <HomeContainer>
-      <form  onSubmit={handleSubmit(handleCreateNewCycle)}>       
+      <form onSubmit={handleSubmit(handleCreateNewCycle)}>       
           <FormProvider {...newCycleForm}>
             <NewCycleForm />
           </FormProvider>
